@@ -42,3 +42,12 @@ vnoremap . :normal.<CR>
 
 " Make backspace more effective
 set backspace=indent,eol,start
+
+" Toggle Goyo
+nnoremap <silent> <Leader>g :Goyo<CR>
+
+" Toggle Limelight
+nnoremap <silent> <Leader>l :Limelight!!<CR>
+
+" Toggle Goyo and Limelight
+nnoremap <silent> <Leader>gl :Goyo<CR>:Limelight!!<CR>
