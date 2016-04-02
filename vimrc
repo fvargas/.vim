@@ -36,6 +36,7 @@ set encoding=utf-8
 
 " Enable spellchecking
 set spell spelllang=en_us
+set spellcapcheck=""
 
 " Map dot to work the same in visual mode as it does in normal mode
 vnoremap . :normal.<CR>
@@ -51,3 +52,6 @@ nnoremap <silent> <Leader>l :Limelight!!<CR>
 
 " Toggle Goyo and Limelight
 nnoremap <silent> <Leader>gl :Goyo<CR>:Limelight!!<CR>
+
+" Set scroll margin for window top and bottom
+set scrolloff=1
