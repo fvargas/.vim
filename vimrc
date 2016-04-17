@@ -4,10 +4,6 @@
 " Should be first line in vimrc.
 set nocompatible
 
-" Source and execute Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-
 colorscheme Tomorrow-Night
 
 " Create alternate mapping for exiting insert mode
@@ -38,11 +34,29 @@ set encoding=utf-8
 set spell spelllang=en_us
 set spellcapcheck=""
 
+" Compile and create spell file if it does not exist or is not readable
+if !filereadable(expand("~/.vim/spell/en.utf-8.add.spl"))
+  mkspell! ~/.vim/spell/en.utf-8.add
+endif
+
 " Map dot to work the same in visual mode as it does in normal mode
 vnoremap . :normal.<CR>
 
 " Make backspace more effective
 set backspace=indent,eol,start
+
+" Set scroll margin for window top and bottom
+set scrolloff=1
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+" Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Source and execute Pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 
 " Toggle Goyo
 nnoremap <silent> <Leader>g :Goyo<CR>
@@ -53,5 +67,5 @@ nnoremap <silent> <Leader>l :Limelight!!<CR>
 " Toggle Goyo and Limelight
 nnoremap <silent> <Leader>gl :Goyo<CR>:Limelight!!<CR>
 
-" Set scroll margin for window top and bottom
-set scrolloff=1
+" Make airline statusline always visible
+set laststatus=2
