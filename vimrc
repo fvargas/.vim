@@ -48,6 +48,19 @@ set backspace=indent,eol,start
 " Set scroll margin for window top and bottom
 set scrolloff=1
 
+" Create mappings for splitting a new window with a specified file
+nnoremap <Leader>j :split<Space>
+nnoremap <Leader>l :vsplit<Space>
+
+" Set the location for a new split window relative to its parent
+set splitbelow
+set splitright
+
+" Create mappings for changing focus between windows
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -62,10 +75,13 @@ execute pathogen#infect()
 nnoremap <silent> <Leader>g :Goyo<CR>
 
 " Toggle Limelight
-nnoremap <silent> <Leader>l :Limelight!!<CR>
+nnoremap <silent> <Leader>i :Limelight!!<CR>
 
 " Toggle Goyo and Limelight
-nnoremap <silent> <Leader>gl :Goyo<CR>:Limelight!!<CR>
+nnoremap <silent> <Leader>gi :Goyo<CR>:Limelight!!<CR>
 
 " Make airline statusline always visible
 set laststatus=2
+
+" Toggle NERDTree
+nnoremap <Leader>t :NERDTreeToggle<CR>
