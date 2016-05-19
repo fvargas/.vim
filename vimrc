@@ -30,8 +30,8 @@ set background=dark
 syntax enable
 set encoding=utf-8
 
-" Enable spellchecking
-set spell spelllang=en_us
+" Configure spellchecking
+set spelllang=en_us
 set spellcapcheck=""
 
 " Compile and create spell file if it does not exist or is not readable
