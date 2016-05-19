@@ -56,6 +56,12 @@ nnoremap <Leader>l :vsplit<Space>
 set splitbelow
 set splitright
 
+" Remove separator character between vertical split windows
+set fillchars-=vert:\|
+
+" Make separator background between vertical split windows transparent
+highlight VertSplit ctermbg=none
+
 " Create mappings for changing focus between windows
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
