@@ -68,6 +68,18 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Make Vim background transparent
+highlight Normal ctermbg=none
+
+" Highlight the 81st virtual column of a line when it exceeds 80 characters
+call matchadd("ColorColumn", '\%81v\S', 20)
+highlight ColorColumn ctermbg=magenta
+
+" Create mappings for writing and quitting
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>x :x<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plugins
