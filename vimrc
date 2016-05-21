@@ -78,6 +78,7 @@ highlight ColorColumn ctermbg=magenta
 " Create mappings for writing and quitting
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>a :qa<CR>
 nnoremap <Leader>x :x<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
