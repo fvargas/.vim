@@ -102,8 +102,5 @@ nnoremap <silent> <Leader>i :Limelight!!<CR>
 " Toggle Goyo and Limelight
 nnoremap <silent> <Leader>gi :Goyo<CR>:Limelight!!<CR>
 
-" Make airline statusline always visible
-set laststatus=2
-
 " Toggle NERDTree
 nnoremap <Leader>t :NERDTreeToggle<CR>

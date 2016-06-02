@@ -10,9 +10,6 @@
 [submodule "bundle/limelight.vim"]
 	path = bundle/limelight.vim
 	url = https://github.com/junegunn/limelight.vim.git
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
