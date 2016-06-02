@@ -1,21 +1,21 @@
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
-	url = git@github.com:tpope/vim-pathogen.git
+	url = https://github.com/tpope/vim-pathogen.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
-	url = git@github.com:tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/goyo.vim"]
 	path = bundle/goyo.vim
-	url = git@github.com:junegunn/goyo.vim.git
+	url = https://github.com/junegunn/goyo.vim.git
 [submodule "bundle/limelight.vim"]
 	path = bundle/limelight.vim
-	url = git@github.com:junegunn/limelight.vim.git
+	url = https://github.com/junegunn/limelight.vim.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
-	url = git@github.com:vim-airline/vim-airline.git
+	url = https://github.com/vim-airline/vim-airline.git
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
-	url = git@github.com:tpope/vim-commentary.git
+	url = https://github.com/tpope/vim-commentary.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
