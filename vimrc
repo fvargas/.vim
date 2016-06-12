@@ -49,8 +49,8 @@ set backspace=indent,eol,start
 set scrolloff=1
 
 " Create mappings for splitting a new window with a specified file
-nnoremap <Leader>j :split<Space>
-nnoremap <Leader>l :vsplit<Space>
+nnoremap <C-j> :split<Space>
+nnoremap <C-l> :vsplit<Space>
 
 " Set the location for a new split window relative to its parent
 set splitbelow
@@ -63,10 +63,10 @@ set fillchars-=vert:\|
 highlight VertSplit ctermbg=none
 
 " Create mappings for changing focus between windows
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <Leader>h <C-w>h
+nnoremap <Leader>j <C-w>j
+nnoremap <Leader>k <C-w>k
+nnoremap <Leader>l <C-w>l
 
 " Highlight the 81st virtual column of a line when it exceeds 80 characters
 function HighlightColumn()
