@@ -84,6 +84,12 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>a :qa<CR>
 nnoremap <Leader>x :x<CR>
 
+" Make the status line always visible
+set laststatus=2
+
+" Show line and column number of cursor and relative positon of text
+set ruler
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plugins
