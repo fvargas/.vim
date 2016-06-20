@@ -72,7 +72,7 @@ nnoremap <Leader>l <C-w>l
 function HighlightColumn()
   if !exists("w:highlightcolumn")
     let w:highlightcolumn = 1
-    call matchadd("ColorColumn", '\%81v\S', 20)
+    call matchadd("ColorColumn", '\%81v.', 20)
   endif
 endfunction
 autocmd VimEnter,WinEnter * call HighlightColumn()
