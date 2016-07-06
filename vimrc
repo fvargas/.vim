@@ -90,6 +90,9 @@ set laststatus=2
 " Show line and column number of cursor and relative positon of text
 set ruler
 
+" Capitalize the first letter of a word and enter insert mode
+nnoremap <Leader>c vlvbvUi
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plugins
