@@ -1,7 +1,7 @@
 " Use Vim settings rather than Vi settings
 "
-" Explicitly setting this is helpful when using the -u option.
-" Should be first line in vimrc.
+" Explicitly setting this is helpful when using the -u option. Should be first
+" line in vimrc
 set nocompatible
 
 colorscheme Tomorrow-Night
@@ -92,6 +92,10 @@ set ruler
 
 " Capitalize the first letter of a word and enter insert mode
 nnoremap <Leader>c vlvbvUi
+
+" Allow specified keys that move the cursor left/right to move to the
+" previous/next line when the cursor is on the first/last character in the line
+set whichwrap+=h,l,<,>,[,]
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
