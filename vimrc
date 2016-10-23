@@ -8,6 +8,7 @@ colorscheme Tomorrow-Night
 
 " Create alternate mapping for exiting insert mode
 inoremap jk <Esc>
+inoremap kj <Esc>
 
 " Set custom <Leader> key
 let mapleader = "\<Space>"
