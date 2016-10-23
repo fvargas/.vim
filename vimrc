@@ -107,7 +107,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 " Toggle Goyo
-nnoremap <silent> <Leader>g :Goyo<CR>
+nnoremap <silent> <Leader>o :Goyo<CR>
 
 " Toggle Limelight
 nnoremap <silent> <Leader>i :Limelight!!<CR>
@@ -117,3 +117,12 @@ nnoremap <silent> <Leader>gi :Goyo<CR>:Limelight!!<CR>
 
 " Toggle NERDTree
 nnoremap <Leader>t :NERDTreeToggle<CR>
+
+" Reduce update delay for vim-gitgutter
+set updatetime=250
+
+" Create mappings for vim-gitgutter that do not conflict with the <Leader>h
+" prefix
+nmap <Leader>gs <Plug>GitGutterStageHunk
+nmap <Leader>gu <Plug>GitGutterUndoHunk
+nmap <Leader>gp <Plug>GitGutterPreviewHunk
