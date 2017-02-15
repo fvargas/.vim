@@ -7,17 +7,16 @@ set nocompatible
 colorscheme Tomorrow-Night
 
 " Create alternate mapping for exiting insert mode
-inoremap jk <Esc>
-inoremap kj <Esc>
+inoremap jk <esc>
+inoremap kj <esc>
 
-" Set custom <Leader> key
-let mapleader = "\<Space>"
+" Set custom <leader> key
+let mapleader = "\<space>"
 
 set encoding=utf-8
 
 " Enable line numbers
-set number
-set relativenumber
+set number relativenumber
 
 " Set tab width
 set tabstop=2
@@ -45,7 +44,7 @@ if !filereadable(expand("~/.vim/spell/en.utf-8.add.spl"))
 endif
 
 " Map dot to work the same in visual mode as it does in normal mode
-vnoremap . :normal.<CR>
+vnoremap . :normal.<cr>
 
 " Make backspace more effective
 set backspace=indent,eol,start
@@ -54,12 +53,11 @@ set backspace=indent,eol,start
 set scrolloff=1
 
 " Create mappings for splitting a new window with a specified file
-nnoremap <C-j> :split<Space>
-nnoremap <C-l> :vsplit<Space>
+nnoremap <c-j> :split<space>
+nnoremap <c-l> :vsplit<space>
 
 " Set the location for a new split window relative to its parent
-set splitbelow
-set splitright
+set splitbelow splitright
 
 " Remove separator character between vertical split windows
 set fillchars-=vert:\|
@@ -68,10 +66,10 @@ set fillchars-=vert:\|
 highlight VertSplit ctermbg=none
 
 " Create mappings for changing focus between windows
-nnoremap <Leader>h <C-w>h
-nnoremap <Leader>j <C-w>j
-nnoremap <Leader>k <C-w>k
-nnoremap <Leader>l <C-w>l
+nnoremap <leader>h <c-w>h
+nnoremap <leader>j <c-w>j
+nnoremap <leader>k <c-w>k
+nnoremap <leader>l <c-w>l
 
 " Highlight the 81st virtual column of a line when it exceeds 80 characters
 function HighlightColumn()
@@ -84,10 +82,10 @@ autocmd VimEnter,WinEnter * call HighlightColumn()
 highlight ColorColumn ctermbg=magenta
 
 " Create mappings for writing and quitting
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>a :qa<CR>
-nnoremap <Leader>x :x<CR>
+nnoremap <leader>w :w<cr>
+nnoremap <leader>q :q<cr>
+nnoremap <leader>a :qa<cr>
+nnoremap <leader>x :x<cr>
 
 " Make the status line always visible
 set laststatus=2
@@ -96,7 +94,7 @@ set laststatus=2
 set ruler
 
 " Capitalize the first letter of a word and enter insert mode
-nnoremap <Leader>c vlvbvUi
+nnoremap <leader>c vlvbvUi
 
 " Allow specified keys that move the cursor left/right to move to the
 " previous/next line when the cursor is on the first/last character in the line
@@ -112,22 +110,22 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 " Toggle Goyo
-nnoremap <silent> <Leader>o :Goyo<CR>
+nnoremap <silent> <leader>o :Goyo<cr>
 
 " Toggle Limelight
-nnoremap <silent> <Leader>i :Limelight!!<CR>
+nnoremap <silent> <leader>i :Limelight!!<cr>
 
 " Toggle Goyo and Limelight
-nnoremap <silent> <Leader>gi :Goyo<CR>:Limelight!!<CR>
+nnoremap <silent> <leader>gi :Goyo<cr>:Limelight!!<cr>
 
 " Toggle NERDTree
-nnoremap <Leader>t :NERDTreeToggle<CR>
+nnoremap <leader>t :NERDTreeToggle<cr>
 
 " Reduce update delay for vim-gitgutter
 set updatetime=250
 
-" Create mappings for vim-gitgutter that do not conflict with the <Leader>h
+" Create mappings for vim-gitgutter that do not conflict with the <leader>h
 " prefix
-nmap <Leader>gs <Plug>GitGutterStageHunk
-nmap <Leader>gu <Plug>GitGutterUndoHunk
-nmap <Leader>gp <Plug>GitGutterPreviewHunk
+nmap <leader>gs <plug>GitGutterStageHunk
+nmap <leader>gu <plug>GitGutterUndoHunk
+nmap <leader>gp <plug>GitGutterPreviewHunk
