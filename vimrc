@@ -13,14 +13,19 @@ inoremap kj <Esc>
 " Set custom <Leader> key
 let mapleader = "\<Space>"
 
+set encoding=utf-8
+
 " Enable line numbers
 set number
 set relativenumber
 
-" Set tabs to two spaces by default
-set expandtab
-set softtabstop=2
-set shiftwidth=2
+" Set tab width
+set tabstop=2
+set shiftwidth=0
+
+" Make tabs visible
+set list
+let &listchars = "tab:⊢\<space>" 
 
 " Enable automatic file-type based indentation
 filetype plugin indent on
@@ -29,7 +34,6 @@ filetype plugin indent on
 set background=dark
 
 syntax enable
-set encoding=utf-8
 
 " Configure spellchecking
 set spelllang=en_us
