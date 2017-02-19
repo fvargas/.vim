@@ -100,6 +100,9 @@ nnoremap <leader>c vlvbvUi
 " previous/next line when the cursor is on the first/last character in the line
 set whichwrap+=h,l,<,>,[,]
 
+" Hide ~ characters shown for empty lines
+highlight EndOfBuffer ctermfg=bg
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plugins
