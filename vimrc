@@ -4,6 +4,9 @@
 " line in vimrc
 set nocompatible
 
+" Use 24-bit color with the guifg and guibg attributes
+set termguicolors
+
 colorscheme Tomorrow-Night
 
 " Create alternate mapping for exiting insert mode
@@ -63,7 +66,7 @@ set splitbelow splitright
 set fillchars-=vert:\|
 
 " Make separator background between vertical split windows transparent
-highlight VertSplit ctermbg=none
+highlight VertSplit guibg=NONE
 
 " Create mappings for changing focus between windows
 nnoremap <leader>h <c-w>h
@@ -79,7 +82,7 @@ function HighlightColumn()
   endif
 endfunction
 autocmd VimEnter,WinEnter * call HighlightColumn()
-highlight ColorColumn ctermbg=magenta
+highlight ColorColumn guibg=red
 
 " Create mappings for writing and quitting
 nnoremap <leader>w :w<cr>
@@ -101,7 +104,7 @@ nnoremap <leader>c vlvbvUi
 set whichwrap+=h,l,<,>,[,]
 
 " Hide ~ characters shown for empty lines
-highlight EndOfBuffer ctermfg=bg
+highlight EndOfBuffer guifg=bg
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
