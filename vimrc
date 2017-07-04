@@ -129,8 +129,14 @@ nnoremap <silent> <leader>gi :Goyo<cr>:Limelight!!<cr>
 " NERD Tree
 """"""""""""""""""""""""""""""""""""""""
 
+" Remove superfluous UI items
+let NERDTreeMinimalUI = 1
+
 " Toggle NERD Tree
 nnoremap <silent> <leader>t :NERDTreeToggle<cr>
+
+" Find the current file in the NERD Tree
+nnoremap <silent> <leader>f :NERDTreeFind<cr>
 
 " Automatically open NERD Tree on Vim start up if no files were specified
 autocmd StdinReadPre * let s:std_in=1
