@@ -9,7 +9,7 @@ set termguicolors
 
 colorscheme Tomorrow-Night
 
-" Create alternate mapping for exiting insert mode
+" Create alternate mappings for exiting insert mode
 inoremap jk <esc>
 inoremap kj <esc>
 
