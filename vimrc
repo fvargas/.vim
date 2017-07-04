@@ -124,8 +124,19 @@ nnoremap <silent> <leader>i :Limelight!!<cr>
 " Toggle Goyo and Limelight
 nnoremap <silent> <leader>gi :Goyo<cr>:Limelight!!<cr>
 
-" Toggle NERDTree
-nnoremap <leader>t :NERDTreeToggle<cr>
+""""""""""""""""""""""""""""""""""""""""
+"
+" NERD Tree
+""""""""""""""""""""""""""""""""""""""""
+
+" Toggle NERD Tree
+nnoremap <silent> <leader>t :NERDTreeToggle<cr>
+
+" Automatically open NERD Tree on Vim start up if no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+""""""""""""""""""""""""""""""""""""""""
 
 " Reduce update delay for vim-gitgutter
 set updatetime=250
