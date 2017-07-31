@@ -132,6 +132,9 @@ nnoremap <silent> <leader>gi :Goyo<cr>:Limelight!!<cr>
 " Remove superfluous UI items
 let NERDTreeMinimalUI = 1
 
+" Show dotfiles
+let NERDTreeShowHidden = 1
+
 " Toggle NERD Tree
 nnoremap <silent> <leader>t :NERDTreeToggle<cr>
 
