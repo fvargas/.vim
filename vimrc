@@ -111,10 +111,6 @@ highlight EndOfBuffer guifg=bg
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Source and execute Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-
 " Toggle Goyo
 nnoremap <silent> <leader>o :Goyo<cr>
 
