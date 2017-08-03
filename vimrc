@@ -27,7 +27,7 @@ set shiftwidth=0
 
 " Make tabs visible
 set list
-let &listchars = "tab:⊢\<space>" 
+let &listchars = "tab:│\<space>"
 
 " Enable automatic file-type based indentation
 filetype plugin indent on
