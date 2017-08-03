@@ -7,7 +7,7 @@ set nocompatible
 " Use 24-bit color with the guifg and guibg attributes
 set termguicolors
 
-colorscheme Tomorrow-Night
+colorscheme jellybeans
 
 " Create alternate mappings for exiting insert mode
 inoremap jk <esc>

@@ -25,3 +25,6 @@
 [submodule "pack/fvgs/start/vim-airline"]
 	path = pack/fvgs/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
+[submodule "pack/fvgs/opt/jellybeans.vim"]
+	path = pack/fvgs/opt/jellybeans.vim
+	url = https://github.com/nanotech/jellybeans.vim.git
