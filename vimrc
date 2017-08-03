@@ -151,3 +151,5 @@ set updatetime=250
 nmap <leader>gs <plug>GitGutterStageHunk
 nmap <leader>gu <plug>GitGutterUndoHunk
 nmap <leader>gp <plug>GitGutterPreviewHunk
+
+let g:airline_powerline_fonts = 1

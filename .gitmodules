@@ -22,3 +22,6 @@
 [submodule "bundle/nerdtree-git-plugin"]
 	path = pack/fvgs/start/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "pack/fvgs/start/vim-airline"]
+	path = pack/fvgs/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
