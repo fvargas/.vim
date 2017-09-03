@@ -34,3 +34,6 @@
 [submodule "pack/fvgs/start/Colorizer"]
 	path = pack/fvgs/start/Colorizer
 	url = https://github.com/chrisbra/Colorizer.git
+[submodule "pack/fvgs/start/MatchTagAlways"]
+	path = pack/fvgs/start/MatchTagAlways
+	url = https://github.com/Valloric/MatchTagAlways.git
