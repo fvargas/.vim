@@ -153,3 +153,6 @@ nmap <leader>gu <plug>GitGutterUndoHunk
 nmap <leader>gp <plug>GitGutterPreviewHunk
 
 let g:airline_powerline_fonts = 1
+
+" Toggle Colorizer
+nmap <silent> <leader>cc <plug>Colorizer
