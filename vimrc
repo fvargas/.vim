@@ -97,7 +97,7 @@ set laststatus=2
 set ruler
 
 " Capitalize the first letter of a word and enter insert mode
-nnoremap <leader>c vlvbvUi
+nnoremap <leader>cc vlvbvUi
 
 " Allow specified keys that move the cursor left/right to move to the
 " previous/next line when the cursor is on the first/last character in the line
@@ -155,4 +155,4 @@ nmap <leader>gp <plug>GitGutterPreviewHunk
 let g:airline_powerline_fonts = 1
 
 " Toggle Colorizer
-nmap <silent> <leader>cc <plug>Colorizer
+nmap <silent> <leader>cl <plug>Colorizer
