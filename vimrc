@@ -19,7 +19,7 @@ let mapleader = "\<space>"
 set encoding=utf-8
 
 " Enable line numbers
-set number relativenumber
+set number
 
 " Set tab width
 set tabstop=2
