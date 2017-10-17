@@ -106,6 +106,9 @@ set whichwrap+=h,l,<,>,[,]
 " Hide ~ characters shown for empty lines
 highlight EndOfBuffer guifg=bg
 
+" Enhance matches with '%'
+packadd! matchit
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plugins
