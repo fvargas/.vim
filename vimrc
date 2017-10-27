@@ -43,7 +43,7 @@ set spellcapcheck=""
 
 " Compile and create spell file if it does not exist or is not readable
 if !filereadable(expand("~/.vim/spell/en.utf-8.add.spl"))
-  mkspell! ~/.vim/spell/en.utf-8.add
+	mkspell! ~/.vim/spell/en.utf-8.add
 endif
 
 " Map dot to work the same in visual mode as it does in normal mode
@@ -76,10 +76,10 @@ nnoremap <leader>l <c-w>l
 
 " Highlight the 81st virtual column of a line when it exceeds 80 characters
 function HighlightColumn()
-  if !exists("w:highlightcolumn")
-    let w:highlightcolumn = 1
-    call matchadd("ColorColumn", '\%81v.', 20)
-  endif
+	if !exists("w:highlightcolumn")
+		let w:highlightcolumn = 1
+		call matchadd("ColorColumn", '\%81v.', 20)
+	endif
 endfunction
 autocmd VimEnter,WinEnter * call HighlightColumn()
 highlight ColorColumn guibg=red
