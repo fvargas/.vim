@@ -7,6 +7,11 @@ set nocompatible
 " Use 24-bit color with the guifg and guibg attributes
 set termguicolors
 
+" Set color map for syntax highlighting
+set background=dark
+
+syntax enable
+
 colorscheme jellybeans
 
 " Create alternate mappings for exiting insert mode
@@ -31,11 +36,6 @@ let &listchars = "tab:│\<space>"
 
 " Enable automatic file-type based indentation
 filetype plugin indent on
-
-" Set color map for syntax highlighting
-set background=dark
-
-syntax enable
 
 " Configure spellchecking
 set spelllang=en_us
