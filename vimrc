@@ -14,6 +14,24 @@ syntax enable
 
 colorscheme jellybeans
 
+" Apply custom highlights
+fun! s:Highlight()
+	highlight ColorColumn guibg=red
+
+	" Make separator background between vertical split windows transparent
+	highlight VertSplit guibg=NONE
+
+	" Hide ~ characters shown for empty lines
+	highlight EndOfBuffer guifg=bg
+endfun
+
+call s:Highlight()
+
+" Reapply custom highlights when the color scheme is reloaded
+augroup Highlight
+	autocmd! ColorScheme * call s:Highlight()
+augroup end
+
 " Create alternate mappings for exiting insert mode
 inoremap jk <esc>
 inoremap kj <esc>
@@ -65,9 +83,6 @@ set splitbelow splitright
 " Remove separator character between vertical split windows
 set fillchars-=vert:\|
 
-" Make separator background between vertical split windows transparent
-highlight VertSplit guibg=NONE
-
 " Create mappings for changing focus between windows
 nnoremap <leader>h <c-w>h
 nnoremap <leader>j <c-w>j
@@ -87,8 +102,6 @@ augroup HighlightColumn
 	autocmd! VimEnter,WinEnter * call s:HighlightColumn()
 augroup end
 
-highlight ColorColumn guibg=red
-
 " Create mappings for writing and quitting
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
@@ -107,9 +120,6 @@ nnoremap <leader>cc vlvbvUi
 " Allow specified keys that move the cursor left/right to move to the
 " previous/next line when the cursor is on the first/last character in the line
 set whichwrap+=h,l,<,>,[,]
-
-" Hide ~ characters shown for empty lines
-highlight EndOfBuffer guifg=bg
 
 " Enhance matches with '%'
 packadd! matchit
