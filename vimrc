@@ -75,13 +75,18 @@ nnoremap <leader>k <c-w>k
 nnoremap <leader>l <c-w>l
 
 " Highlight the 81st virtual column of a line when it exceeds 80 characters
-function HighlightColumn()
+fun! s:HighlightColumn()
 	if !exists("w:highlightcolumn")
 		let w:highlightcolumn = 1
 		call matchadd("ColorColumn", '\%81v.', 20)
 	endif
-endfunction
-autocmd VimEnter,WinEnter * call HighlightColumn()
+endfun
+
+" Call s:HighlightColumn on all windows
+augroup HighlightColumn
+	autocmd! VimEnter,WinEnter * call s:HighlightColumn()
+augroup end
+
 highlight ColorColumn guibg=red
 
 " Create mappings for writing and quitting
