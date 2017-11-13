@@ -170,6 +170,9 @@ nmap <leader>gs <plug>GitGutterStageHunk
 nmap <leader>gu <plug>GitGutterUndoHunk
 nmap <leader>gp <plug>GitGutterPreviewHunk
 
+let g:gitgutter_sign_modified = "•"
+let g:gitgutter_sign_modified_removed = g:gitgutter_sign_modified . "_"
+
 let g:airline_powerline_fonts = 1
 
 " Toggle Colorizer
