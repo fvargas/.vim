@@ -124,6 +124,9 @@ set whichwrap+=h,l,<,>,[,]
 " Enhance matches with '%'
 packadd! matchit
 
+" Open vimrc in a new tab
+nnoremap <silent> <leader>v :tabedit $MYVIMRC<cr>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plugins
