@@ -104,9 +104,9 @@ augroup end
 
 " Create mappings for writing and quitting
 nnoremap <leader>w :w<cr>
-nnoremap <leader>q :q<cr>
-nnoremap <leader>a :qa<cr>
-nnoremap <leader>x :x<cr>
+nnoremap <silent> <leader>q :q<cr>
+nnoremap <silent> <leader>a :qa<cr>
+nnoremap <silent> <leader>x :x<cr>
 
 " Make the status line always visible
 set laststatus=2
