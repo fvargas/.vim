@@ -127,6 +127,9 @@ packadd! matchit
 " Open vimrc in a new tab
 nnoremap <silent> <leader>v :tabedit $MYVIMRC<cr>
 
+" Close the current tab
+nnoremap <silent> <leader>z :tabclose<cr>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plugins
