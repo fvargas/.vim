@@ -34,3 +34,6 @@
 [submodule "pack/fvgs/start/MatchTagAlways"]
 	path = pack/fvgs/start/MatchTagAlways
 	url = https://github.com/Valloric/MatchTagAlways.git
+[submodule "pack/fvgs/start/ultisnips"]
+	path = pack/fvgs/start/ultisnips
+	url = https://github.com/SirVer/ultisnips.git

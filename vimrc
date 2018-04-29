@@ -183,3 +183,17 @@ let g:airline_powerline_fonts = 1
 
 " Toggle Colorizer
 nmap <silent> <leader>cl <plug>Colorizer
+
+""""""""""""""""""""""""""""""""""""""""
+"
+" UltiSnips
+""""""""""""""""""""""""""""""""""""""""
+
+" Edit snippets for current filetype
+nnoremap <silent> <leader>s :UltiSnipsEdit<cr>
+
+" Open edit window in new tab
+let g:UltiSnipsEditSplit = "tabdo"
+
+" Set directory in which to search for snippet files
+let g:UltiSnipsSnippetDirectories = [$HOME . "/.vim/ultisnips"]
